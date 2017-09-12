@@ -4,7 +4,8 @@ $(document).ready(function(){
 
 
 
-      $("#scrollTo").click(function() {
+      $("#scrollTo").click(function(e) {
+          e.preventDefault();
      $('html, body').animate({
          scrollTop: $("#ideas").offset().top
      }, 2000);
